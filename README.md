@@ -1,0 +1,1 @@
+spa_in_mpa_rails
