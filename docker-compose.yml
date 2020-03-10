@@ -7,10 +7,11 @@ services:
     build: .
     ports:
       - 3000:3000
+      - 3035:3035
     volumes:
       - bundle:/usr/local/bundle:cached
       - .:/usr/src/app:delegated
       - /usr/src/app/node_modules
     stdin_open: true
     tty: true
-    command: /bin/bash
+    command: /bin/bash scripts/dev_init.sh
